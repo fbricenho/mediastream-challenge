@@ -27,6 +27,13 @@ class MovieDetail extends Component {
   render() {
     const {movie, trailers, reviews, isFetching_movie, isFetching_trailers, isFetching_reviews} = this.props;
 
+    /*
+      TODO: Investigate about Youtube API
+          <Row>
+            <TrailerList data={trailers.slice(0,TRAILER_MAX_NUM)} />
+          </Row>
+    */
+
     if (isFetching_movie || isFetching_trailers || isFetching_reviews) {
       return <p>loading...</p>
     }
@@ -40,9 +47,6 @@ class MovieDetail extends Component {
             <Col xs={12} sm={6} md={8}>
               <MovieInfo movie={movie}/>
             </Col>
-          </Row>
-          <Row>
-            <TrailerList data={trailers.slice(0,TRAILER_MAX_NUM)} />
           </Row>
           <Row>
             <ReviewList data={reviews.slice(0,REVIEW_MAX_NUM)} />
