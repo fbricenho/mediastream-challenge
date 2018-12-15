@@ -2,6 +2,10 @@
   "name": "mediastream-challenge",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Francisco Briceno",
+    "email": "fbricenho@gmail.com"
+  },
   "homepage": "https://mediastream-challenge.herokuapp.com/",
   "dependencies": {
     "lodash": "^4.17.11",
